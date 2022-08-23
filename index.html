@@ -12,18 +12,30 @@
   <tail>
     <script>
     //alert("Welcome to TEH GAMEZ!!!");
-    var car_x = 50;
+    var car_x = 10;
     var car_y = 50;
-    var car_x2 = 10;
-    var car_y2 = 5;
+    var car_x_width = 10;
+    var car_y_width = 5;
+    var car2_x = 10;
+    var car2_y = 60;
+    var car2_x_width = 10;
+    var car2_y_width = 5;
 
     var c = document.getElementById("canvas");
     var ctx = c.getContext("2d");
 
+    //draw car1
     ctx.beginPath();
     ctx.lineWidth = "10";
     ctx.strokeStyle = "red";
-    ctx.rect(car_x, car_y, car_x2, car_y2);
+    ctx.rect(car_x, car_y, car_x_width, car_y_width);
+    ctx.stroke();
+
+    //draw car2
+    ctx.beginPath();
+    ctx.lineWidth = "10";
+    ctx.strokeStyle = "blue";
+    ctx.rect(car2_x, car2_x, car2_x_width, car2_y_width);
     ctx.stroke();
   </script>
   </tail>
