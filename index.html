@@ -1,19 +1,29 @@
 <head>
-  <script>
-    alert("Welcome to TEH GAMEZ!!!");
+
+  <head>
+
+  <body>
+    <center>
+      <h1>TITLE GOES HERE</h1>
+    </center>
+    <canvas id="canvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+  </body>
+
+  <tail>
+    <script>
+    //alert("Welcome to TEH GAMEZ!!!");
     var car_x = 50;
     var car_y = 50;
-    var car_x2 = 100;
-    var car_y2 = 100;
-    
+    var car_x2 = 10;
+    var car_y2 = 5;
+
     var c = document.getElementById("canvas");
     var ctx = c.getContext("2d");
-    
-    ctx.fillRect(car_x, car_y, car_x2, car_y2);
-  </script>
-<head>
 
-<body>
-  <center><h1>TITLE GOES HERE</h1></center>
-  <canvas id="canvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
-</body>
+    ctx.beginPath();
+    ctx.lineWidth = "10";
+    ctx.strokeStyle = "red";
+    ctx.rect(car_x, car_y, car_x2, car_y2);
+    ctx.stroke();
+  </script>
+  </tail>
